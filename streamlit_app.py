@@ -1,6 +1,7 @@
 import streamlit
 import emoji
 streamlit.title('My Parents New Healthy Diner')
-streamlit.header(':) Breakfast Menu :P ')
+print(emoji.emojize(":grinning_squinting_face:"))
+streamlit.header(' Breakfast Menu  ')
 streamlit.write('Banana','Apple', 'Chikku', 'Milk')  
 streamlit.text('Curd and Muesli')
