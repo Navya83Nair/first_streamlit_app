@@ -1,5 +1,5 @@
 import streamlit
-import emoji
+
 streamlit.title('My Parents New Healthy Diner')
 print(emoji.emojize(":grinning_squinting_face:"))
 streamlit.header(' Breakfast Menu  ')
