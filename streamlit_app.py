@@ -22,7 +22,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruityvice Fruit Advice')
-try
+try:
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi") #separated base url from fruit name
 #streamlit.text(fruityvice_response.json())
 #Enter choice of fruit
@@ -30,7 +30,7 @@ try
    streamlit.write('The user entered', fruit_choice)
    if not fruit_choice:
            streamlit.error('Please select a fruit to get information.')
-    else
+    else:
            #import requests
             fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice) #separated base url from fruit name
             #take the fruityvice_response into normalized form
