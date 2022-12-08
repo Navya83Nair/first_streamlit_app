@@ -26,7 +26,7 @@ try:
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi") #separated base url from fruit name
 #streamlit.text(fruityvice_response.json())
 #Enter choice of fruit
-  fruit_choice = streamlit.text_input('What fruit would you likr information about?)
+  fruit_choice = streamlit.text_input('What fruit would you likr information about?')
    streamlit.write('The user entered', fruit_choice)
    if not fruit_choice:
            streamlit.error('Please select a fruit to get information.')
